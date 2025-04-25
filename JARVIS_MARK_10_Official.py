@@ -227,15 +227,3 @@ tts_engine.runAndWait()
 
 # 🚀 Start GUI Loop
 root.mainloop()
-
-
-
-
-"""
-✅ Summary:
-Now the GUI will allow users to:
-
-Speak using the "Talk to Jarvis" button 🎙️
-
-Or type a question and press "Send" or hit Enter to interact 💬
-"""
