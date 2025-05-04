@@ -154,14 +154,15 @@ MARK 13 OFFICIAL:
 MARK 14 Beta & Official:
 
 ### 
-- Changed the Folder that Store the Data of Jarvis.
+- Changed the Folder to Store the Data of Jarvis.
 - Added Notes Manager Feature.
 - added a Reminder System to Jarvis using json format and save everything in your DATA/reminders.json file. This system will:
 		> Allow you to add reminders (Minutes only) by saying or typing things like:
 			(Set reminder to drink water in 1 minute)
 		> Periodically check reminders and alert you when it's time.
 		> Store all reminders in DATA/reminders.json.
-- Checks Wheather the .env file is created and wheather there is gemini api key available. 
+
+- Checks that the .env file is created and wheather there is gemini api key available. 
 ---------------------------------------------------------------------------------------------------------------------------------------
 MARK 15 Beta & Official:
 
@@ -169,3 +170,8 @@ MARK 15 Beta & Official:
 - Now Jarvis Will have a fresh, new and modern look.
 - Added A Toggle Button for Dark and Light Theme.
 
+---------------------------------------------------------------------------------------------------------------------------------------
+MARK 16 Beta & Official:
+
+### ✅ What's New:
+- Now the program structure is perfectly organised in folders and files.

@@ -154,14 +154,15 @@ MARK 13 OFFICIAL:
 MARK 14 Beta & Official:
 
 ### 
-- Changed the Folder that Store the Data of Jarvis.
+- Changed the Folder to Store the Data of Jarvis.
 - Added Notes Manager Feature.
 - added a Reminder System to Jarvis using json format and save everything in your DATA/reminders.json file. This system will:
 		> Allow you to add reminders (Minutes only) by saying or typing things like:
 			(Set reminder to drink water in 1 minute)
 		> Periodically check reminders and alert you when it's time.
 		> Store all reminders in DATA/reminders.json.
-- Checks Wheather the .env file is created and wheather there is gemini api key available. 
+
+- Checks that the .env file is created and wheather there is gemini api key available. 
 ---------------------------------------------------------------------------------------------------------------------------------------
 MARK 15 Beta & Official:
 
@@ -176,17 +177,26 @@ MARK 16 Beta & Official:
 - Now the program structure is perfectly organised in folders and files.
 
 ---------------------------------------------------------------------------------------------------------------------------------------
-MARK 17 Beta :
+MARK 17 Beta & Official:
 
 ### ✅ What's New:
--1: Added Wake Word Toggle to GUI-
+-: Added Wake Word Toggle to GUI-
 			-Added a switch to the GUI
 			-Connected it to a global flag wake_word_mode
 			-this flag will be checked by the listening thread
--2: Background Wake Word Listener-
+-: Background Wake Word Listener-
 			-Constantly listens for audio input
-			-Triggers only when it hears "hey jarvis"
+			-Triggers only when it hears "hey jarvis".
 			-Listens again for the actual command right after.
 			- closes on closing the GUI window.
+
+-: fixed the bug:- Now Jarvis will also Write the text while speaking without errors.
+
+-: Added the clear text area button, 
+	      show all reminders button,
+	      speech interrupt button .🔳(Modify voice/tts.py to add stop_speaking() function ,
+						Added a Small Circular Button in gui_main.py .
+-: added a random speed typing animation (can be adjusted)
+
 
 
