@@ -199,3 +199,15 @@ MARK 17 Beta & Official:
 -: added a random speed typing animation (can be adjusted)
 
 
+---------------------------------------------------------------------------------------------------------------------------------------
+MARK 18 BETA & OFFICIAL:
+
+### ✅ What's New:
+-: 🧠 Smart Memory Core (Persistent AI Brain) > Let Jarvis remember context across days.
+	Save important facts automatically
+	Remember your name, city, interests, TODOs
+	📁 Stored in memory.json
+
+-: added a simple calculator PLUGIN which can be triggered by   -typing the calculator <expression>
+								
+-: Added a Cool Productivity DASHBOARD at left that enhances the user experience.
