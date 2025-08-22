@@ -78,7 +78,7 @@ JARVIS/
 │  #└── config.json
 │
 └── assets/                     # Icons, sounds, images
-
+```
 
 ⚙️ Setup Instructions
 # Clone the repo
