@@ -146,7 +146,7 @@ Persistence: Automatically saves conversations in a chat_log.txt file and loads 
 MARK 13 OFFICIAL:
 
 ### ✅ What's New:
-	Same Features As of MARK 13 Beta BUT:
+	Same Features as of MARK 13 Beta BUT:
 		have New Updated Script
 
 
@@ -197,6 +197,63 @@ MARK 17 Beta & Official:
 	      speech interrupt button .🔳(Modify voice/tts.py to add stop_speaking() function ,
 						Added a Small Circular Button in gui_main.py .
 -: added a random speed typing animation (can be adjusted)
+
+
+---------------------------------------------------------------------------------------------------------------------------------------
+MARK 18 BETA & OFFICIAL:
+
+### ✅ What's New:
+-: 🧠 Smart Memory Core (Persistent AI Brain) > Let Jarvis remember context across days.
+	Save important facts automatically
+	Remember your name, city, interests, TODOs
+	📁 Stored in memory.json
+
+-: added a simple calculator PLUGIN which can be triggered by   -typing the calculator <expression>
+								
+-: Added a Cool Productivity DASHBOARD at left that enhances the user experience.
+-: Added a Calendar, clock and uptime timer.
+-: RGB Sidebar Border
+
+
+---------------------------------------------------------------------------------------------------------------------------------------
+MARK 19 BETA & OFFICIAL:
+### ✅ What's New:
+-: All New and Modern ,Techy UI look.
+-: Avatar Smart Loader - now the avatar can be gif, png, jpg file also.
+-: Jarvis window has the new icon.
+-: Added new themes. (removed Dark/Light Toggle Switch)
+-: Auto Learning Mode & Command Execution-
+	now Jarvis can Be taught by the user for new custom commands.
+		(say:- when i say <> do this <open <file path>>)
+			when i say <> do this <open <URL>>
+			when i say <> do this <open <>>
+	[Can now contain some bugs/ERRORS]
+-: Added A Weather Block That Shows current Temperature (Refreshes every minute)
+
+---------------------------------------------------------------------------------------------------------------------------------------
+MARK 20 BETA & OFFICIAL:
+### ✅ What's New:
+-: Added the Right Sidebar.
+-: Added the Tech-News section in right sidebar.
+-: Added the (jarvis_bg) Background feature for custom backgrounds.
+-: Added The Auto-Detect location feature for live weather forecasting.
+-: Fixed the annoying Asterisk speaking glitch.
+-: Now text enclosed with astrisks will get Bold Automatically.
+-: Added the Jarvis Thinking Animation.
+-: Added a TTS Switch to ON or OFF Text to Speech of Jarvis.
+-: Added the Loading Video Intro.
+-: Now Message can be sent by ENTER Key also.
+-: Added the support of Hindi language
+-: Added some new System Commands.  	eg:- [(Shutdown/hibernate/s...) my pc]
+
+
+---------------------------------------------------------------------------------------------------------------------------------------
+MARK 21 BETA & OFFICIAL:
+### ✅ What's New:
+-: Added the Market Watch Box in the Right Sidebar.
+
+
+
 
 
 
