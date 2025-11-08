@@ -179,8 +179,8 @@ JARVIS_MARK_21_Beta/
 
 #### 1. **Clone the Repository**
 ```bash
-git clone https://github.com/RootDeveloperDS/JARVIS-AI.git
-cd JARVIS-AI/JARVIS_MARK_21_Beta
+git clone https://github.com/RootDeveloperDS/J.A.R.V.I.S..git
+cd J.A.R.V.I.S.
 ```
 
 #### 2. **Install Python Dependencies**
@@ -197,7 +197,7 @@ pipwin install pyaudio
 
 #### 3. **Set Up API Keys**
 
-Create a `.env` file in the `JARVIS_MARK_21_Beta` directory:
+run **JarvisMain.py** and enter your API key when asked:
 
 ```env
 # Required API Keys
