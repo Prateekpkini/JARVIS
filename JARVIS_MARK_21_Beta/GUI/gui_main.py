@@ -3,6 +3,8 @@ import tkinter as tk
 from tkinter import ttk
 from tkinter import scrolledtext,END
 from PIL import Image, ImageTk, ImageSequence  # Only for avatar file check
+from core.config import BASE_DIR
+import os
 #from voice.tts import speak
 from voice.stt import threaded_listen_and_respond
 import threading
@@ -305,7 +307,14 @@ def launch_gui():
     theme = load_current_theme()
     app = ctk.CTk(fg_color=theme["BG"])# Set the main window background color
     theme_widgets["frames"].append(app)  # Store the main app window in theme_widgets
-    app.iconbitmap("assets/jarvis.ico")  # Set the icon for the main window
+    try:
+        icon_path = os.path.join(BASE_DIR, "assets", "jarvis.ico")
+        icon_image = Image.open(icon_path)
+        icon_photo = ImageTk.PhotoImage(icon_image)
+        app.iconphoto(True, icon_photo)
+    except Exception as e:
+        print(f"Error setting icon: {e}")
+        pass
     root = app
     app.title("J.A.R.V.I.S.  Mark 20 - MADE BY DEVANSH SHARMA")
     app.geometry("1400x780")
@@ -384,7 +393,7 @@ def launch_gui():
     # Load faded image if there
     from .helper import get_faded_image
     try:
-        bg_image = get_faded_image("assets/backgrounds/jarvis_bg.jpg", size=(1100, 800), opacity=0.5)
+        bg_image = get_faded_image(os.path.join(BASE_DIR, "assets", "backgrounds", "jarvis_bg.jpg"), size=(1100, 800), opacity=0.5)
     
         # Place image as background using a CTkLabel
         bg_label = ctk.CTkLabel(center_frame, image=bg_image, text="")
@@ -542,10 +551,11 @@ def launch_gui():
     avatar_label = tk.Label(center_frame, bg=theme["BG"])
     avatar_label.pack(pady=10,side="top")
     #animate_gif(avatar_label, "avatar.gif",root)
-    show_avatar(avatar_label, "avatar.gif")      # animated  
-    show_avatar(avatar_label, "face.png")        # static image  
-    show_avatar(avatar_label, "ai-avatar.jpg")   # jpg supported too
-    show_avatar(avatar_label, "ai-avatar.jpeg")  # jpeg supported too
+    # For now, only load one avatar that is known to exist.
+    show_avatar(avatar_label, os.path.join(BASE_DIR, "ai-avatar.jpg"))   # jpg supported too
+    # show_avatar(avatar_label, os.path.join(BASE_DIR, "avatar.gif"))      # animated  
+    # show_avatar(avatar_label, os.path.join(BASE_DIR, "face.png"))        # static image  
+    # show_avatar(avatar_label, os.path.join(BASE_DIR, "ai-avatar.jpeg"))  # jpeg supported too
     '''
     # Theme toggle
     def toggle_theme():
@@ -836,14 +846,14 @@ def launch_gui():
 
 
 
-    from floating_button import FloatingMic
-    from PySide6.QtWidgets import QApplication
-    import sys
-    # After your GUI is ready and output_text exists
-    app = QApplication(sys.argv)
-    floating_mic = FloatingMic(output_text)
-    floating_mic.show()
-    print("showing mic\n")
+    # from floating_button import FloatingMic
+    # from PySide6.QtWidgets import QApplication
+    # import sys
+    # # After your GUI is ready and output_text exists
+    # app = QApplication(sys.argv)
+    # floating_mic = FloatingMic(output_text)
+    # floating_mic.show()
+    # print("showing mic\n")
         
         
         

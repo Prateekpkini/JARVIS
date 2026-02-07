@@ -5,6 +5,7 @@ from .location import get_city_by_ip
 import os,requests
 from dotenv import load_dotenv
 
+WEATHER_API_KEY="9a8c335eaa354497ac3af518d3a5b8ff"
 load_dotenv()
 API_KEY = os.getenv("WEATHER_API_KEY")
 
@@ -31,7 +32,7 @@ def get_weather():
         else:
             desc = "🌤️ " + desc
             
-        return f"🌡️{city}: {temp}°C \n {f"Feel:{feels}"}, {f"Humid:{hum}"} \n {desc}"
+        return f"🌡️{city}: {temp}°C \n Feel:{feels}, Humid:{hum} \n {desc}"
     except Exception as e:
         print(f"⚠️ Weather API error: {e}")
         return "Weather unavailable"

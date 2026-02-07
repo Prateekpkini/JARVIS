@@ -2,7 +2,7 @@
 
 import requests, os
 from dotenv import load_dotenv
-
+NEWS_API_KEY="9a8c335eaa354497ac3af518d3a5b8ff"
 load_dotenv()
 NEWS_API_KEY = os.getenv("NEWS_API_KEY")
 

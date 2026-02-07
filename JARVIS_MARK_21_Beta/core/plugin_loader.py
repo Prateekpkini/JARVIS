@@ -1,7 +1,8 @@
 import os
 import importlib.util
 
-PLUGIN_FOLDER = "plugins"
+_CURRENT_DIR = os.path.dirname(os.path.abspath(__file__))
+PLUGIN_FOLDER = os.path.join(_CURRENT_DIR, "..", "plugins")
 
 def load_plugins():
     plugin_registry = {}
